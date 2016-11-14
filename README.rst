@@ -108,11 +108,32 @@ Iteración #4: Números
 
 Aprendamos a usar Python como si de una calculadora se tratara.
 
+* ``+`` suma
+* ``-`` resta
+* ``/`` división
+* ``*`` multiplicación
+* ``%`` módulo
+* ``<`` menor que
+* ``>`` mayor que
+* ``<=`` menor o igual que
+* ``>=`` mayor o igual que
+
 Iteración #5: Variables
 -----------------------
 
 Guardemos nuestros cálculos, números y lo que queramos en un lugar donde no
 se pierdan.
+
+.. code-block:: python
+
+    >>> cars = 100
+    >>> space_in_a_car = 4.0
+    >>> drivers = 30
+    >>> passengers = 90
+    >>> cars_not_driven = cars - drivers
+    >>> cars_driven = drivers
+    >>> carpool_capacity = cars_driven * space_in_a_car
+    >>> average_passengers_per_car = passengers / cars_driven
 
 Iteración #6: Cadenas de texto
 ------------------------------
@@ -133,3 +154,87 @@ distintas.
     >>> text = "Hola %s!" % name
     >>> other_text = "¿Qué te trae por aquí, {}?".format(name)
     >>> more_options = "Con esto puedes " + "concatenar cadenas"
+
+Iteración #7: Hacer preguntas al usuario
+----------------------------------------
+
+Vamos a obtener datos del usuario::
+
+.. code-block:: python
+
+    print("¿Cómo te llamas?")
+    name = input()
+    answer = input("¿Cuál es el sentido de la vida, el universo y todo lo demás?")
+
+Iteración #8: Listas, tuplas y diccionarios
+-------------------------------------------
+
+Las listas, tuplas y diccionarios son las estructuras de datos
+más útiles y usadas en Python.
+
+**Listas**
+
+Similares a los vectores y arrays en otros lenguaes, son mutables y
+pueden contener elementos de cualquier tipo.
+
+.. code-block:: python
+
+    >>> some_list = []
+    >>> some_list = list()
+    >>> list_1 = [1, 2, 3]
+    >>> list_2 = ["a", "b", "c"]
+    >>> list_3 = ["a", 1, "b", 2]
+    >>> nested = [list_1, list_2, list_3]
+
+A los elementos de una lista se puden acceder usando las ``[]``, además, se
+pueden trocear usando los ``:``:
+
+.. code-block:: python
+
+    >>> list_1[1]
+    2
+    >>> list_2[-1]
+    "c"
+    >>> list_2[:2]
+    ["a", "b"]
+    >>> list_2[1:]
+    ["b", "c"]
+    >>> list_2[1:2]
+    ["b"]
+
+**Tuplas**
+
+Similar a las listas, pero son inmutables.
+
+.. code-block:: python
+
+    >>> some_tuple = (1, 2, 3)
+    >>> some_tuple = tuple()
+    >>> some_tuple = tuple([1, 2, 3])
+
+Se puede acceder a los elementos de una tupla de la misma
+forma que la lista.
+
+**Diccionarios**
+
+Los diccionarios son *tablas hash*, que están indexados por
+cualquier tipo inmutable, como cadenas de texto o números.
+
+.. code-block:: python
+
+    >>> some_dict = {}
+    >>> some_dict = dict()
+    >>> other_dict = {"one": 1, "two": 2,  "three": 3}
+
+.. code-block:: python
+
+    >>> "one" in other_dict
+    True
+    >>> other_dict["two"]
+    2
+    >>> other_dict["five"]
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    KeyError: 'five'
+    >>> "five" in other_dict
+    False
