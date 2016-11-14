@@ -9,13 +9,9 @@ lenguaje de programación.
 Forma de trabajar
 -----------------
 
-* Se realizarán grupos de 3 personas siempre que sea posible, intentando que
-aquellos que tengan más conocimientos se junten con los que tengan poco o
-ninguno.
+* Se realizarán grupos de 3 personas siempre que sea posible, intentando que aquellos que tengan más conocimientos se junten con los que tengan poco o ninguno.
 
-* El trabajo se dividirá en iteraciones, donde en cada una de ellas el
-grupo tratara de resolver un pequeño poblema, que será más complejo
-conforme avancen las iteraciones.
+* El trabajo se dividirá en iteraciones, donde en cada una de ellas el grupo tratara de resolver un pequeño poblema, que será más complejo conforme avancen las iteraciones.
 
 Iteración #0: Instalación de Python 3
 -------------------------------------
