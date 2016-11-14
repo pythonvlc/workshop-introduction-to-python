@@ -12,6 +12,7 @@ Forma de trabajar
 * Se realizarán grupos de 3 personas siempre que sea posible, intentando que
 aquellos que tengan más conocimientos se junten con los que tengan poco o
 ninguno.
+
 * El trabajo se dividirá en iteraciones, donde en cada una de ellas el
 grupo tratara de resolver un pequeño poblema, que será más complejo
 conforme avancen las iteraciones.
@@ -65,7 +66,7 @@ Desde un fichero, por ejemplo ``hello.py``, con el siguiente contenido:
 
 Lo ejecutamos:
 
-.. code-block:: bash
+.. code-block:: console
 
     $ python hello.py
     Hello world!
@@ -73,7 +74,7 @@ Lo ejecutamos:
 Iteración #2: Creación de un virtualenv
 ---------------------------------------
 
-Usando el módulo ``venv`` de Python 3::
+Usando el módulo ``venv`` de Python 3:
 
 .. code-block:: console
 
