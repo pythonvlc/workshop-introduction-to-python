@@ -106,13 +106,19 @@ Ahora podemos usar el comando ``mkvirtualenv`` para crear el viertualenv
 Iteración #4: Números
 ---------------------
 
+Aprendamos a usar Python como si de una calculadora se tratara.
 
 Iteración #5: Variables
 -----------------------
 
+Guardemos nuestros cálculos, números y lo que queramos en un lugar donde no
+se pierdan.
 
 Iteración #6: Cadenas de texto
 ------------------------------
+
+No sólo se pueden guardar números, también cadenas de texto, y de varias formas
+distintas.
 
 .. code-block:: python
 
