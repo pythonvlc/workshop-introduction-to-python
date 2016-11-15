@@ -456,3 +456,49 @@ Y puede tener argumentos variables:
 
 Iteración #16: Clases
 ---------------------
+
+Todo en Python es un **objeto**, es decir, todo en Python tiene atributos y
+métodos.
+
+.. code-block:: python
+
+    class Vehicle:
+
+        def __init__(self, color):
+            self.color = color
+
+        def brake(self):
+            return "¡Frenando!"
+
+.. code-block:: python
+
+    >>> car = Vehicle(color="red")
+    >>> car.brake()
+    ¡Frenando!
+
+* Las "funciones" ``__init__`` y ``brake`` no son realmente functiones, son
+métodos de la clase.
+* En ``self.color`` se está guardando el color como atributo.
+* En ``car = Vehicle(color="red")`` se está creando una **instancia** de la
+clase.
+* El método ``__init__`` es el inicializador de la clase, se llama siempre
+que se crea una nueva instancia.
+* El atributo ``self`` hace referencia siempre a una instancia de la clase.
+
+**Subclases**
+
+Las subclases son especializaciones de otras clases, que añade y/o sobreescribe
+métodos.
+
+.. code-block:: python
+
+    class Car(Vehicle):
+
+        def brake(self):
+            return "¡Frenando más despacio!"
+
+.. code-block:: python
+
+    >>> car = Car(color="red")
+    >>> car.brake()
+    ¡Frenando más despacio!
