@@ -476,13 +476,10 @@ métodos.
     >>> car.brake()
     ¡Frenando!
 
-* Las "funciones" ``__init__`` y ``brake`` no son realmente functiones, son
-métodos de la clase.
+* Las "funciones" ``__init__`` y ``brake`` no son realmente functiones, son métodos de la clase.
 * En ``self.color`` se está guardando el color como atributo.
-* En ``car = Vehicle(color="red")`` se está creando una **instancia** de la
-clase.
-* El método ``__init__`` es el inicializador de la clase, se llama siempre
-que se crea una nueva instancia.
+* En ``car = Vehicle(color="red")`` se está creando una **instancia** de la clase.
+* El método ``__init__`` es el inicializador de la clase, se llama siempre que se crea una nueva instancia.
 * El atributo ``self`` hace referencia siempre a una instancia de la clase.
 
 **Subclases**
