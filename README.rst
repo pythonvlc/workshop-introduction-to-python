@@ -265,7 +265,7 @@ La evaluación de ``[]``, ``()``, ``""`` y ``None`` siempre resulta en ``False``
 Iteración #10: Bucles
 ---------------------
 
-**Bucle ``for``**
+**Bucle for**
 
 .. code-block:: python
 
@@ -284,7 +284,7 @@ Iteración #10: Bucles
     "two"
     "one"
 
-**Bucle ``while``**
+**Bucle while**
 
 .. code-block:: python
 
