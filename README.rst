@@ -238,3 +238,182 @@ cualquier tipo inmutable, como cadenas de texto o números.
     KeyError: 'five'
     >>> "five" in other_dict
     False
+
+Iteración #9: Condiciones
+-------------------------
+
+.. code-block:: python
+
+    cats = input("¿Cuantos gatos tienes?")
+    if cats < 2:
+        print("Igual está muy solo")
+    elif cats == 2:
+        print("¡Es el número perfecto!")
+    elif 2 < cats <= 5:
+        print("¿Seguro que puedes cuidarlos a todos bien?")
+    else:
+        print("No te diré yo que son demasiados... pero...")
+
+**Operadores booleanos**
+
+* ``or``
+* ``and``
+* ``not``
+
+La evaluación de ``[]``, ``()``, ``""`` y ``None`` siempre resulta en ``False``.
+
+Iteración #10: Bucles
+---------------------
+
+**Bucle ``for``**
+
+.. code-block:: python
+
+    >>> for number in range(5):
+            print(number)
+    0
+    1
+    2
+    3
+    4
+    5
+    >>> a_dict = {"one":1, "two":2, "three":3}
+    >>> for key in a_dict:
+            print(key)
+    "three"
+    "two"
+    "one"
+
+**Bucle ``while``**
+
+.. code-block:: python
+
+    >>> i = 0
+    >>> while i < 10:
+            print(i)
+            i += 1
+    0
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+
+Iteración #11: Compresiones
+---------------------------
+
+**Copresión de listas**
+
+.. code-block:: python
+
+    >>> x = ['1', '2', '3', '4', '5']
+    >>> y = [int(i) for i in x]
+    >>> y
+    [1, 2, 3, 4, 5]
+    >>> vec = [[1,2,3], [4,5,6], [7,8,9]]
+    >>> [num for elem in vec for num in elem]
+    [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+**Copresión de diccionarios**
+
+.. code-block:: python
+
+    >>> d = {i: str(i) for i in range(5)}
+    >>> print(d)
+    {0: '0', 1: '1', 2: '2', 3: '3', 4: '4'}
+
+Iteración #12: Manejando excepciones
+------------------------------------
+
+.. code-block:: python
+
+    other_dict = {"one": 1, "two": 2,  "three": 3}
+    key = "five"
+    try:
+        other_dict[key]
+    except KeyError:
+        print("La calve %s no existe en el diccionario" % key)
+    else:
+        print("La calve %s se ha encontrado en el diccionario" % key)
+    finally:
+        print("¡Y seguimos ejecutando!")
+
+**Excepciones comunes**
+
+* Exception
+* AttributeError
+* IOError
+* ImportError
+* IndexError
+* KeyError
+* KeyboardInterrupt
+* NameError
+* OSError
+* SyntaxError
+* TypeError
+* ValueError
+* ZeroDivisionError
+
+
+Iteración #13: Trabajando con ficheros
+--------------------------------------
+
+.. code-block:: python
+
+    with open("test.txt") as file_handler:
+        for line in file_handler:
+            print(line)
+
+Iteración #14: Módulos y paquetes
+---------------------------------
+
+* Cada fichero ``.py`` es un **módulo**
+* Una carpeta con un fichero llamado ``__init__.py`` es un paquete
+
+.. code-block:: python
+
+    >>> import this
+    The Zen of Python, by Tim Peters
+
+    Beautiful is better than ugly.
+    Explicit is better than implicit.
+    Simple is better than complex.
+    Complex is better than complicated.
+    Flat is better than nested.
+    Sparse is better than dense.
+    Readability counts.
+    Special cases aren't special enough to break the rules.
+    Although practicality beats purity.
+    Errors should never pass silently.
+    Unless explicitly silenced.
+    In the face of ambiguity, refuse the temptation to guess.
+    There should be one-- and preferably only one --obvious way to do it.
+    Although that way may not be obvious at first unless you're Dutch.
+    Now is better than never.
+    Although never is often better than *right* now.
+    If the implementation is hard to explain, it's a bad idea.
+    If the implementation is easy to explain, it may be a good idea.
+    Namespaces are one honking great idea -- let's do more of those!
+
+.. code-block:: python
+
+    >>> import math
+    >>> math.sqrt(4)
+    2.0
+
+.. code-block:: python
+
+    >>> from math import sqrt
+    >>> sqrt(16)
+    4.0
+
+Iteración #15: Funciones
+------------------------
+
+
+Iteración #16: Clases
+---------------------
