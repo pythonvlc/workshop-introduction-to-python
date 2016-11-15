@@ -414,6 +414,45 @@ Iteración #14: Módulos y paquetes
 Iteración #15: Funciones
 ------------------------
 
+La forma más sencilla de una función:
+
+.. code-block:: python
+
+    >>> def cool_function():
+            print("!He hecho una función!")
+    >>> cool_function()
+    !He hecho una función!
+
+Una función devuelve un valor:
+
+.. code-block:: python
+
+    >>> def cool_function():
+            return 40 + 2
+    >>> cool_function()
+    42
+
+Puede tener argumentos:
+
+.. code-block:: python
+
+    >>> def cool_function(a, b):
+            return a + b
+    >>> cool_function(40, 2)
+    42
+    >>> cool_function(b=2, a=40)
+    42
+
+Y puede tener argumentos variables:
+
+.. code-block:: python
+
+    >>> def cool_function(*args, **kwargs):
+            print(args)
+            print(kwargs)
+    >>> cool_function(1, 2, c=3, d=4)
+    (1, 2)
+    {"c": 3, "d": 4}
 
 Iteración #16: Clases
 ---------------------
